@@ -21,43 +21,69 @@ public class Program
         new Book("My Roomates are Bums Part 2", false)
         }; public static void Main(string[] args)
     {
-        Console.WriteLine("Welcome! Type 1 to lookup a book. Type 2 to review your checkouts.");
-        string choice = Console.ReadLine();
-        if (choice == "1")
+        bool runningProgram = true;
+        while (runningProgram)
         {
-            Console.WriteLine("Type in something to search!");
-            string searchText = Console.ReadLine();
-            foreach (Book book in bookList)
+            Console.WriteLine("Welcome! Type 1 to lookup a book. Type 2 to review your checkouts.");
+            string choice = Console.ReadLine();
+            if (choice == "1")
             {
-                if (book.Name.Contains(searchText))
+                Console.WriteLine("Type in something to search!");
+                string searchText = Console.ReadLine();
+                foreach (Book book in bookList)
                 {
-                    Console.WriteLine(book.Name);
-                }
-
-            } 
-            Console.WriteLine("Which specific book do you want?");
-            string checkoutBook = Console.ReadLine();
-            if ()
-            {
-                Console.WriteLine("Sorry this book is checked out.");
-            }
-            else
-            {
-                Console.WriteLine("Want to Checkout? Type Yes/No");
-                string checkOutDecision = Console.ReadLine();
-                if (checkOutDecision.ToLower() == "yes")
-                    foreach (Book book in bookList) {
-                        if (book.Name == )
+                    if (book.Name.ToLower().Contains(searchText.ToLower()))
+                    {
+                        Console.WriteLine(book.Name);
                     }
+
+                }
+
+                bool found = false;
+                while (!found)
                 {
+                    Console.WriteLine("Which specific book do you want?");
+                    string checkoutBook = Console.ReadLine();
+                    foreach (Book book in bookList)
+                    {
+                        if (book.Name.ToLower() == checkoutBook.ToLower())
+                        {
+                            if (book.CheckedOut == true)
+                            {
+                                Console.WriteLine("This book is checked out, please select another!");
+                                found = true;
+                                break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("You have checked out the book!");
+                                book.CheckedOut = true;
+                                found = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!found)
+                    {
+                        Console.WriteLine("No Book found you dingus.");
+                        Console.WriteLine("Want to lookup another? Yes/No");
+                        string decision = Console.ReadLine();
+                        if (decision.ToLower() == "yes")
+                        { }
+                        else if (decision.ToLower() == "no")
+                        {
+                            Console.WriteLine("Ok. Exiting Selection");
+                            break;
+                        }
+                    }
 
                 }
             }
-        }
-        else if (choice == "2")
-        {
+            else if (choice == "2")
+            {
 
-            Console.WriteLine($"You have checked out");
+                Console.WriteLine($"You have checked out");
+            }
         }
     }
 }
