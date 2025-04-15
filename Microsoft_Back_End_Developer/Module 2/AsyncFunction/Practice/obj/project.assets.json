@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\johnh\\.nuget\\packages\\": {}
+    "C:\\Users\\spycy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\johnh\\Desktop\\Coursera\\Microsoft_Back_End_Developer\\Module 2\\AsyncFunction\\Practice\\Practice.csproj",
+      "projectUniqueName": "C:\\Users\\spycy\\OneDrive\\Desktop\\Coursera\\Microsoft_Back_End_Developer\\Module 2\\AsyncFunction\\Practice\\Practice.csproj",
       "projectName": "Practice",
-      "projectPath": "C:\\Users\\johnh\\Desktop\\Coursera\\Microsoft_Back_End_Developer\\Module 2\\AsyncFunction\\Practice\\Practice.csproj",
-      "packagesPath": "C:\\Users\\johnh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\johnh\\Desktop\\Coursera\\Microsoft_Back_End_Developer\\Module 2\\AsyncFunction\\Practice\\obj\\",
+      "projectPath": "C:\\Users\\spycy\\OneDrive\\Desktop\\Coursera\\Microsoft_Back_End_Developer\\Module 2\\AsyncFunction\\Practice\\Practice.csproj",
+      "packagesPath": "C:\\Users\\spycy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\spycy\\OneDrive\\Desktop\\Coursera\\Microsoft_Back_End_Developer\\Module 2\\AsyncFunction\\Practice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\johnh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\spycy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
